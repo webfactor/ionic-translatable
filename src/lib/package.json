@@ -1,5 +1,5 @@
 {
-  "name": "@webfactor/translatable",
+  "name": "@webfactor/ionic-translatable",
   "version": "0.1.0",
   "repository": {
     "type": "git",
@@ -9,10 +9,10 @@
     "angular"
   ],
   "license": "MIT",
-  "main": "./bundles/translatable.umd.js",
-  "es2015": "./esm2015/translatable.js",
-  "module": "./esm5/translatable.es5.js",
-  "typings": "./translatable.d.ts",
+  "main": "./bundles/ionic-translatable.umd.js",
+  "es2015": "./esm2015/ionic-translatable.js",
+  "module": "./esm5/ionic-translatable.es5.js",
+  "typings": "./ionic-translatable.d.ts",
   "peerDependencies": {
     "@ngx-translate/core": "9.1.1"
   }

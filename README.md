@@ -7,7 +7,7 @@ Extend pages / components with this one. Automatically adds a _translations_ pro
 
 Add to your project via npm.
 ```
-$ npm i @webfactor/translatable
+$ npm i @webfactor/ionic-translatable
 ```
 
 ## Methods
