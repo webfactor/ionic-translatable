@@ -14,8 +14,6 @@
   "module": "./esm5/translatable.es5.js",
   "typings": "./translatable.d.ts",
   "peerDependencies": {
-    "@angular/core": "^5.0.0",
-    "@angular/common": "^5.0.0",
-    "@angular/http": "^5.0.0"
+    "@ngx-translate/core": "9.1.1"
   }
 }
