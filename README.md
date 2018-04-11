@@ -1,6 +1,6 @@
 # Translatable
 
-Abstract class that makes retrieving translations in your controllers easier. 🏳️‍🌈
+Abstract class that makes retrieving translations in your controllers easier. 🏳️‍🌈  
 Extend pages / components with this one. Automatically adds a _translations_ property, where all the requested translations are stored.
 
 # Installation
