@@ -1,28 +1,33 @@
 # Translatable
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.2.
+Abstract class that makes retrieving translations in your controllers easier. 🏳️‍🌈  
+Extend pages / components with this one. Automatically adds a _translations_ property, where all the requested translations are stored.
 
-## Development server
+# Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Add to your project via npm.
+```
+$ npm i @webfactor/ionic-translatable
+```
 
-## Code scaffolding
+## Methods
+```typescript
+getTranslations(keys: string | string[]): Promise<any>
+```
+Gets the requested translations and stores them in the _translations_ property.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Example
+```typescript
+export class HomePageComponent extends Translatable {
+    constructor(protected translate: TranslateService) {
+       super(translate);
+       this.getTranslations('home').then(translations => {
+           // do something maybe
+       }, err => console.log(err));
+    }
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+    logTranslation(): void {
+        console.log(this.translations.someTranslation);
+    }
+}
+```
