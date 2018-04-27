@@ -10,11 +10,16 @@ Add to your project via npm.
 $ npm i @webfactor/ionic-translatable
 ```
 
-## Methods
+## Methods / Properties
 ```typescript
 getTranslations(keys: string | string[]): Promise<any>
 ```
 Gets the requested translations and stores them in the _translations_ property.
+
+```typescript
+protected translations
+```
+Holds the translations, once retrieved by the `getTranslations()` Method.
 
 ## Example
 ```typescript
