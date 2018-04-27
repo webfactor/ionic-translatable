@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('translatable App', () => {
+describe('ionic-translatable App', () => {
   let page: AppPage;
 
   beforeEach(() => {

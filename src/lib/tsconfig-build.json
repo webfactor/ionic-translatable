@@ -10,7 +10,7 @@
     "newLine": "lf",
     "module": "es2015",
     "moduleResolution": "node",
-    "outDir": "../dist/packages/translatable",
+    "outDir": "../dist/packages/ionic-translatable",
     "rootDir": ".",
     "sourceMap": true,
     "inlineSources": true,
@@ -20,7 +20,7 @@
     "types": [],
     "baseUrl": ".",
     "paths": {
-      "translatable": ["../dist/packages/translatable"]
+      "ionic-translatable": ["../dist/packages/ionic-translatable"]
     },
     "typeRoots": [
       "./node_modules/@types/"
@@ -33,7 +33,7 @@
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
     "flatModuleOutFile": "index.js",
-    "flatModuleId": "translatable",
+    "flatModuleId": "@webfactor/ionic-translatable",
     "skipTemplateCodegen": true
   }
 }
